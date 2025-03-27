@@ -424,7 +424,7 @@ function Header() {
                   id="header-services-dropdown"
                 >
                   <li className="header-inner-dropdown-mobile-view">
-                    <Link id="sud-header" to="/Digitalmarketing">
+                    <Link id="sud-header" to="/digital-marketing">
                       <i
                         className="fa-solid fa-bullhorn"
                         style={{ color: "#000000" }}
@@ -450,7 +450,7 @@ function Header() {
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <Link id="header-sud-header" to="/Seo-optimization">
+                    <Link id="header-sud-header" to="/seo_ptimization">
                       <i
                         className="fa-brands fa-searchengin"
                         style={{ color: "#000000" }}
