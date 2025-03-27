@@ -1,7 +1,9 @@
 import React from "react";
 import "./Both.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import {Link} from "react-router-dom";
 
+// Link tag in <a></a>
 function Footer() {
   return (
     <>
@@ -67,52 +69,52 @@ function Footer() {
             <div className="footer-news-list">
               <ul>
                 <li>
-                  <a href="digital-marketing.html">Digital Marketing</a>
+                  <Link to="/Digitalmarketing">Digital Marketing</Link>
                 </li>
                 <li>
-                  <a href="seo_ptimization.html">
+                   <Link to="/Seo-optimization">
                     Search Engine Optimization (SEO)
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="ConversionRateOptimizationServices.html">
+                 <Link to="/ConversionRateOptimizationServices">
                     CRO Services
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="PayPerClickMarketing.html">
+                  <Link to="/PayPerClickMarketing">
                     Pay Per Click (PPC) Marketing
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="SocialMediaMarketing.html">
+                   <Link to="/SocialMediaMarketing">
                     Social Media Advertising
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="App-development.html">App Development</a>
+                   <Link to="/App-development">App Development</Link>
                 </li>
                 <li>
-                  <a href="WebDesignandDevelopment.html">
+                  <Link to="/WebDesignandDevelopment">
                     Web Design &amp; Development
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="MediaProductionServices.html">Media Production</a>
+                  <Link to="/MediaProductionServices">Media Production</Link>
                 </li>
                 <li>
-                  <a href="ContentMarketing.html">Content Marketing</a>
+                  <Link to="/ContentMarketing">Content Marketing</Link>
                 </li>
                 <li>
-                  <a href="eCommerceMarketing.html">eCommerce Marketing</a>
+                  <Link to="/eCommerceMarketing">eCommerce Marketing</Link>
                 </li>
                 <li>
-                  <a href="online-marketplace-marketing.html">
+                  <Link to="/online-marketplace-marketing">
                     Online Marketplace Marketing
-                  </a>
+                    </Link>
                 </li>
                 <li>
-                  <a href="LinkBuilding.html">Link Building</a>
+                  <Link to="/LinkBuilding">Link Building</Link>
                 </li>
               </ul>
             </div>
@@ -121,25 +123,25 @@ function Footer() {
             <h3>Quick Links</h3>
             <ul className="quick-links">
               <li>
-                <a href="/">Home</a>
+                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/privacypolicy">Privacy Policy</a>
+                 <Link to="/privacypolicy">Privacy Policy</Link>
               </li>
               <li>
-                <a href="/Terms&Conditions">Terms &amp; Conditions</a>
+                 <Link to="/Terms&Conditions">Terms &amp; Conditions</Link>
               </li>
               <li>
-                <a href="/Disclaimer">Disclaimer</a>
+                 <Link to="/Disclaimer">Disclaimer</Link>
               </li>
               <li>
-                <a href="/blogs">Blogs</a>
+                 <Link to="/blogs">Blogs</Link>
               </li>
               <li>
-                <a href="/Events">Events</a>
+                 <Link to="/Events">Events</Link>
               </li>
               <li>
-                <a href="/Refund_policy">Refund Policy</a>
+                 <Link to="/Refund_policy">Refund Policy</Link>
               </li>
             </ul>
           </div>

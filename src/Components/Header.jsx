@@ -1,6 +1,8 @@
 import React from "react";
 import './Both.css'
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import {Link} from "react-router-dom";
+
 
 function Header() {
   return (
@@ -8,410 +10,410 @@ function Header() {
       <header className="header-header">
         <div className="header-header-container">
           <div className="header-logo-container">
-            <a href="/" className="header-logo-home-link">
+            <Link to="/" className="header-logo-home-link">
               <img src="/knoq_logo.png" alt="Knoqlogico" />
-            </a>
+            </Link>
           </div>
           <nav className="header-navbar">
             <ul className="header-menu">
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#" id="header-services-link">
+                <Link to="/#" id="header-services-link">
                   What We Do{" "}
                   <i
                     className="fa-solid fa-angle-down"
                     style={{ color: "#000000" }}
                   />
-                </a>
+                </Link>
                 <ul className="header-dropdown-menu" id="header-services-dropdown">
                   <div className="header-column-one">
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="/digital_marketing">
+                      <Link id="header-sud-header" to="/Digitalmarketing">
                         <i
                           className="fa-solid fa-bullhorn"
                           style={{ color: "#000000" }}
                         />{" "}
                         Digital Marketing
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="/digi">
+                          <Link to="/DigitalMarketingStrategyDevelopment">
                             Digital Marketing Strategy Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="FranchiseDigitalMarketing.html">
+                          <Link to="/FranchiseDigitalMarketing">
                             Franchise Digital Marketing
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="EnterpriseDigitalMarketing.html">
+                          <Link to="/EnterpriseDigitalMarketing">
                             Enterprise Digital Marketing
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="seo_ptimization.html">
+                      <Link id="header-sud-header" to="/Seo-optimization">
                         <i
                           className="fa-brands fa-searchengin"
                           style={{ color: "#000000" }}
                         />{" "}
                         Search Engine Optimization (SEO)
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="local-seo.html">Local SEO</a>
+                          <Link to="/Local-seo">Local SEO</Link>
                         </li>
                         <li>
-                          <a href="technical-seo.html">Technical SEO</a>
+                          <Link to="/technical-seo">Technical SEO</Link>
                         </li>
                         <li>
-                          <a href="franchise-seo.html">Franchise SEO</a>
+                          <Link to="/franchise-seo">Franchise SEO</Link>
                         </li>
                         <li>
-                          <a href="enterprise-seo.html">Enterprise SEO</a>
+                          <Link to="/enterprise-seo">Enterprise SEO</Link>
                         </li>
                         <li>
-                          <a href="generative-optimization.html">
+                          <Link to="/generative-optimization">
                             Generative Engine Optimization
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="seo-audits.html">SEO Audits</a>
+                          <Link to="/seo-audits">SEO Audits</Link>
                         </li>
                         <li>
-                          <a href="franchise-seo-audits.html">
+                          <Link to="/franchise-seo-audits">
                             Franchise SEO Audit
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="enterprise-seo-audit.html">
+                          <Link to="/enterprise-seo-audit">
                             Enterprise SEO Audit
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a
+                      <Link
                         id="header-sud-header"
-                        href="ConversionRateOptimizationServices.html"
+                        to="/ConversionRateOptimizationServices"
                       >
                         <i
                           className="fa-solid fa-filter"
                           style={{ color: "#000000" }}
                         />{" "}
                         CRO Services
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="CROAudit.html">CRO Audits</a>
+                          <Link to="/CROAudit">CRO Audits</Link>
                         </li>
                         <li>
-                          <a href="UserExperienceTesting.html">
+                          <Link to="/UserExperienceTesting">
                             User Experience Testing
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="UserBehaviorAnalytics.html">
+                          <Link to="/UserBehaviorAnalytics">
                             User Behavior Analytics
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                   </div>
                   <div className="header-column-two">
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="PayPerClickMarketing.html">
+                      <Link id="header-sud-header" to="/PayPerClickMarketing">
                         <i
                           className="fa-solid fa-arrow-pointer"
                           style={{ color: "#000000" }}
                         />{" "}
                         Pay Per Click (PPC) Marketing
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="Search-Engine-Marketing.html">
+                          <Link to="/Search-Engine-Marketing">
                             Search Engine Marketing (SEM)
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="Google-Ads-Management-Services.html">
+                          <Link to="/Google-Ads-Management-Services">
                             Google Ads Management
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="YouTube-Advertising-Services.html">
+                          <Link to="/YouTube-Advertising-Services">
                             YouTube Ads Management
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="Programmatic-Advertising.html">
+                          <Link to="/Programmatic-Advertising">
                             Programmatic Advertising
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="Lead-Generation-Services.html">
+                          <Link to="/Lead-Generation-Services">
                             Lead Generation Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="Franchise-PPC-Marketing.html">
+                          <Link to="/Franchise-PPC-Marketing">
                             Franchise PPC
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="Enterprise-PPC-Marketing.html">
+                          <Link to="/Enterprise-PPC-Marketing">
                             Enterprise PPC
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="SocialMediaMarketing.html">
+                      <Link id="header-sud-header" to="/SocialMediaMarketing">
                         <i
                           className="fa-solid fa-hashtag"
                           style={{ color: "#000000" }}
                         />{" "}
                         Social Media Advertising
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="FacebookAdvertising.html">Facebook</a>
+                          <Link to="/FacebookAdvertising">Facebook</Link>
                         </li>
                         <li>
-                          <a href="InstagramMarketing.html">Instagram</a>
+                          <Link to="/InstagramMarketing">Instagram</Link>
                         </li>
                         <li>
-                          <a href="TwitterAdvertising.html">Twitter</a>
+                          <Link to="/TwitterAdvertising">Twitter</Link>
                         </li>
                         <li>
-                          <a href="LinkedInMarketing.html">LinkedIn</a>
+                          <Link to="/LinkedInMarketing">LinkedIn</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="App-development.html">
+                      <Link id="header-sud-header" to="/App-development">
                         <i
                           className="fa-solid fa-mobile-screen-button"
                           style={{ color: "#000000" }}
                         />{" "}
                         App Development
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="iOSAppDevelopment.html">
+                          <Link to="/iOSAppDevelopment">
                             iOS App Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="AndroidAppDevelopment.html">
+                          <Link to="/AndroidAppDevelopment">
                             Android App Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="HybridAppDevelopment.html">
+                          <Link to="/HybridAppDevelopment">
                             Hybrid App Development
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                   </div>
                   <div className="header-column-three">
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="WebDesignandDevelopment.html">
+                      <Link id="header-sud-header" to="/WebDesignandDevelopment">
                         <i
                           className="fa-solid fa-globe"
                           style={{ color: "#000000" }}
                         />{" "}
                         Web Design &amp; Development
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="BrandingServices.html">Branding Services</a>
+                          <Link to="/BrandingServices">Branding Services</Link>
                         </li>
                         <li>
-                          <a href="CustomWebsiteDesign.html">
+                          <Link to="/CustomWebsiteDesign">
                             Custom Website Design
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="WordPressWebsiteDesign.html">
+                          <Link to="/WordPressWebsiteDesign">
                             WordPress Website Design
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="WebsiteHosting.html">Website Hosting</a>
+                          <Link to="/WebsiteHosting">Website Hosting</Link>
                         </li>
                         <li>
-                          <a href="ADAComplianceServices.html">
+                          <Link to="/ADAComplianceServices">
                             ADA Compliance Services
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="MediaProductionServices.html">
+                      <Link id="header-sud-header" to="/MediaProductionServices">
                         <i
                           className="fa-solid fa-camera"
                           style={{ color: "#000000" }}
                         />{" "}
                         Media Production
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="VideoProductionServices.html">
+                          <Link to="/VideoProductionServices">
                             Video Production
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="VideoTestimonialServices.html">
+                          <Link to="/VideoTestimonialServices">
                             Video Testimonial Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="ProductPhotographyServices.html">
+                          <Link to="/ProductPhotographyServices">
                             Product Photography Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="DroneVideoandPhotographyServices.html">
+                          <Link to="/DroneVideoandPhotographyServices">
                             Drone Video &amp; Photography Service
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="ContentMarketing.html">
+                      <Link id="header-sud-header" to="/ContentMarketing">
                         <i
                           className="fa-regular fa-file-lines"
                           style={{ color: "#000000" }}
                         />{" "}
                         Content Marketing
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="SEOContentWritingServices.html">
+                          <Link to="/SEOContentWritingServices">
                             SEO Content Writing
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="CopywritingServices.html">
+                          <Link to="/CopywritingServices">
                             Copywriting Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="TranslationServices.html">
+                          <Link to="/TranslationServices">
                             Translation Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="EmailMarketingServices.html">
+                          <Link to="/EmailMarketingServices">
                             Email Marketing Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="OutboundMarketing.html">
+                          <Link to="/OutboundMarketing">
                             Outbound Marketing
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                   </div>
                   <div className="header-column-four">
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="eCommerceMarketing.html">
+                      <Link id="header-sud-header" to="/eCommerceMarketing">
                         <i
                           className="fa-solid fa-cart-shopping"
                           style={{ color: "#000000" }}
                         />{" "}
                         eCommerce Marketing
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="eCommerceSEO.html">eCommerce SEO</a>
+                          <Link to="/eCommerceSEO">eCommerce SEO</Link>
                         </li>
                         <li>
-                          <a href="eCommercePPC.html">eCommerce PPC</a>
+                          <Link to="/eCommercePPC">eCommerce PPC</Link>
                         </li>
                         <li>
-                          <a href="ShopifyWebDesign.html">Shopify Web Design</a>
+                          <Link to="/ShopifyWebDesign">Shopify Web Design</Link>
                         </li>
                         <li>
-                          <a href="eCommerceWebsiteDesign.html">
+                          <Link to="/eCommerceWebsiteDesign">
                             eCommerce Web Design
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a
+                      <Link
                         id="header-sud-header"
-                        href="online-marketplace-marketing.html"
+                        to="/online-marketplace-marketing"
                       >
                         <i
                           className="fa-solid fa-store"
                           style={{ color: "#000000" }}
                         />{" "}
                         Online Marketplace Marketing
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="amazon-seo.html">Amazon SEO</a>
+                          <Link to="/amazon-seo">Amazon SEO</Link>
                         </li>
                         <li>
-                          <a href="amazon-ppc.html">Amazon Advertising/PPC</a>
+                          <Link to="/amazon-ppc">Amazon Advertising/PPC</Link>
                         </li>
                         <li>
-                          <a href="amazon-storefront-branding.html">
+                          <Link to="/amazon-storefront-branding">
                             Amazon Storefront &amp; Branding
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="amazon-seller-consulting.html">
+                          <Link to="/amazon-seller-consulting">
                             Amazon Seller Consulting
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="amazon-post-management.html">
+                          <Link to="/amazon-post-management">
                             Amazon Posts Management
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="amazon-dsp-adversitment.html">
+                          <Link to="/amazon-dsp-adversitment">
                             Amazon DSP Advertising Management
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="walmart-marketplace.html">
+                          <Link to="/walmart-marketplace">
                             Walmart Marketplace
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="target-marketplace.html">
+                          <Link to="/target-marketplace">
                             Target Plus Marketplace
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="header-inner-dropdown-mobile-view">
-                      <a id="header-sud-header" href="LinkBuilding.html">
+                      <Link id="header-sud-header" to="/LinkBuilding">
                         <i
                           className="fa-solid fa-link"
                           style={{ color: "#000000" }}
                         />{" "}
                         Link Building
-                      </a>
+                      </Link>
                       <ul className="header-sub-menu">
                         <li>
-                          <a href="DigitalPROutreach.html">
+                          <Link to="/DigitalPROutreach">
                             Digital PR Outreach
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="HAROLinkBuilding.html">HARO Link Building</a>
+                          <Link to="/HAROLinkBuilding">HARO Link Building</Link>
                         </li>
                       </ul>
                     </li>
@@ -422,436 +424,436 @@ function Header() {
                   id="header-services-dropdown"
                 >
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="sud-header" href="digital-marketing.html">
+                    <Link id="sud-header" to="/Digitalmarketing">
                       <i
                         className="fa-solid fa-bullhorn"
                         style={{ color: "#000000" }}
                       />{" "}
                       Digital Marketing
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="digital-marketing-strategy-development.html">
+                        <Link to="/digital-marketing-strategy-development">
                           Digital Marketing Strategy Development
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="FranchiseDigitalMarketing.html">
+                        <Link to="/FranchiseDigitalMarketing">
                           Franchise Digital Marketing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="EnterpriseDigitalMarketing.html">
+                        <Link to="/EnterpriseDigitalMarketing">
                           Enterprise Digital Marketing
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="seo_ptimization.html">
+                    <Link id="header-sud-header" to="/Seo-optimization">
                       <i
                         className="fa-brands fa-searchengin"
                         style={{ color: "#000000" }}
                       />{" "}
                       Search Engine Optimization (SEO)
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="local-seo.html">Local SEO</a>
+                        <Link to="/local-seo">Local SEO</Link>
                       </li>
                       <li>
-                        <a href="technical-seo.html">Technical SEO</a>
+                        <Link to="/technical-seo">Technical SEO</Link>
                       </li>
                       <li>
-                        <a href="franchise-seo.html">Franchise SEO</a>
+                        <Link to="/franchise-seo">Franchise SEO</Link>
                       </li>
                       <li>
-                        <a href="enterprise-seo.html">Enterprise SEO</a>
+                        <Link to="/enterprise-seo">Enterprise SEO</Link>
                       </li>
                       <li>
-                        <a href="generative-optimization.html">
+                        <Link to="/generative-optimization">
                           Generative Engine Optimization
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="seo-audits.html">SEO Audits</a>
+                        <Link to="/seo-audits">SEO Audits</Link>
                       </li>
                       <li>
-                        <a href="franchise-seo-audits.html">
+                        <Link to="/franchise-seo-audits">
                           Franchise SEO Audit
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="enterprise-seo-audit.html">
+                        <Link to="/enterprise-seo-audit">
                           Enterprise SEO Audit
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a
+                    <Link
                       id="header-sud-header"
-                      href="ConversionRateOptimizationServices.html"
+                      to="/ConversionRateOptimizationServices"
                     >
                       <i
                         className="fa-solid fa-filter"
                         style={{ color: "#000000" }}
                       />{" "}
                       CRO Services
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="CROAudit.html">CRO Audits</a>
+                        <Link to="/CROAudit">CRO Audits</Link>
                       </li>
                       <li>
-                        <a href="UserExperienceTesting.html">
+                        <Link to="/UserExperienceTesting">
                           User Experience Testing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="UserBehaviorAnalytics.html">
+                        <Link to="/UserBehaviorAnalytics">
                           User Behavior Analytics
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="PayPerClickMarketing.html">
+                    <Link id="header-sud-header" to="/PayPerClickMarketing">
                       <i
                         className="fa-solid fa-arrow-pointer"
                         style={{ color: "#000000" }}
                       />{" "}
                       Pay Per Click (PPC) Marketing
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="Search-Engine-Marketing.html">
+                        <Link to="/Search-Engine-Marketing">
                           Search Engine Marketing (SEM)
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="Google-Ads-Management-Services.html">
+                        <Link to="/Google-Ads-Management-Services">
                           Google Ads Management
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="YouTube-Advertising-Services.html">
+                        <Link to="/YouTube-Advertising-Services">
                           YouTube Ads Management
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="Programmatic-Advertising.html">
+                        <Link to="/Programmatic-Advertising">
                           Programmatic Advertising
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="Lead-Generation-Services.html">
+                        <Link to="/Lead-Generation-Services">
                           Lead Generation Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="Franchise-PPC-Marketing.html">Franchise PPC</a>
+                        <Link to="/Franchise-PPC-Marketing">Franchise PPC</Link>
                       </li>
                       <li>
-                        <a href="Enterprise-PPC-Marketing.html">
+                        <Link to="/Enterprise-PPC-Marketing">
                           Enterprise PPC
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="SocialMediaMarketing.html">
+                    <Link id="header-sud-header" to="/SocialMediaMarketing">
                       <i
                         className="fa-solid fa-hashtag"
                         style={{ color: "#000000" }}
                       />{" "}
                       Social Media Advertising
-                    </a>
+                    </Link>
                     <ul className="sub-menu">
                       <li>
-                        <a href="FacebookAdvertising.html">Facebook</a>
+                        <Link to="/FacebookAdvertising">Facebook</Link>
                       </li>
                       <li>
-                        <a href="InstagramMarketing.html">Instagram</a>
+                        <Link to="/InstagramMarketing">Instagram</Link>
                       </li>
                       <li>
-                        <a href="TwitterAdvertising.html">Twitter</a>
+                        <Link to="/TwitterAdvertising">Twitter</Link>
                       </li>
                       <li>
-                        <a href="LinkedInMarketing.html">LinkedIn</a>
+                        <Link to="/LinkedInMarketing">LinkedIn</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="App-development.html">
+                    <Link id="header-sud-header" to="/App-development">
                       <i
                         className="fa-solid fa-mobile-screen-button"
                         style={{ color: "#000000" }}
                       />{" "}
                       App Development
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="iOSAppDevelopment.html">iOS App Development</a>
+                        <Link to="/iOSAppDevelopment">iOS App Development</Link>
                       </li>
                       <li>
-                        <a href="AndroidAppDevelopment.html">
+                        <Link to="/AndroidAppDevelopment">
                           Android App Development
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="HybridAppDevelopment.html">
+                        <Link to="/HybridAppDevelopment">
                           Hybrid App Development
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="WebDesignandDevelopment.html">
+                    <Link id="header-sud-header" to="/WebDesignandDevelopment">
                       <i
                         className="fa-solid fa-globe"
                         style={{ color: "#000000" }}
                       />{" "}
                       Web Design &amp; Development
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="BrandingServices.html">Branding Services</a>
+                        <Link to="/BrandingServices">Branding Services</Link>
                       </li>
                       <li>
-                        <a href="CustomWebsiteDesign.html">
+                        <Link to="/CustomWebsiteDesign">
                           Custom Website Design
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="WordPressWebsiteDesign.html">
+                        <Link to="/WordPressWebsiteDesign">
                           WordPress Website Design
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="WebsiteHosting.html">Website Hosting</a>
+                        <Link to="/WebsiteHosting">Website Hosting</Link>
                       </li>
                       <li>
-                        <a href="ADAComplianceServices.html">
+                        <Link to="/ADAComplianceServices">
                           ADA Compliance Services
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="MediaProductionServices.html">
+                    <Link id="header-sud-header" to="/MediaProductionServices">
                       <i
                         className="fa-solid fa-camera"
                         style={{ color: "#000000" }}
                       />{" "}
                       Media Production
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="VideoProductionServices.html">
+                        <Link to="/VideoProductionServices">
                           Video Production
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="VideoTestimonialServices.html">
+                        <Link to="/VideoTestimonialServices">
                           Video Testimonial Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="ProductPhotographyServices.html">
+                        <Link to="/ProductPhotographyServices">
                           Product Photography Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="DroneVideoandPhotographyServices.html">
+                        <Link to="/DroneVideoandPhotographyServices">
                           Drone Video &amp; Photography Service
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="ContentMarketing.html">
+                    <Link id="header-sud-header" to="/ContentMarketing">
                       <i
                         className="fa-regular fa-file-lines"
                         style={{ color: "#000000" }}
                       />{" "}
                       Content Marketing
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="SEOContentWritingServices.html">
+                        <Link to="/SEOContentWritingServices">
                           SEO Content Writing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="CopywritingServices.html">
+                        <Link to="/CopywritingServices">
                           Copywriting Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="TranslationServices.html">
+                        <Link to="/TranslationServices">
                           Translation Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="EmailMarketingServices.html">
+                        <Link to="/EmailMarketingServices">
                           Email Marketing Services
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="OutboundMarketing.html">Outbound Marketing</a>
+                        <Link to="/OutboundMarketing">Outbound Marketing</Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="eCommerceMarketing.html">
+                    <Link id="header-sud-header" to="/eCommerceMarketing">
                       <i
                         className="fa-solid fa-cart-shopping"
                         style={{ color: "#000000" }}
                       />{" "}
                       eCommerce Marketing
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="eCommerceSEO.html">eCommerce SEO</a>
+                        <Link to="/eCommerceSEO">eCommerce SEO</Link>
                       </li>
                       <li>
-                        <a href="eCommercePPC.html">eCommerce PPC</a>
+                        <Link to="/eCommercePPC">eCommerce PPC</Link>
                       </li>
                       <li>
-                        <a href="ShopifyWebDesign.html">Shopify Web Design</a>
+                        <Link to="/ShopifyWebDesign">Shopify Web Design</Link>
                       </li>
                       <li>
-                        <a href="eCommerceWebsiteDesign.html">
+                        <Link to="/eCommerceWebsiteDesign">
                           eCommerce Web Design
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="online-marketplace-marketing.html">
+                    <Link id="header-sud-header" to="/online-marketplace-marketing">
                       <i
                         className="fa-solid fa-store"
                         style={{ color: "#000000" }}
                       />{" "}
                       Online Marketplace Marketing
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="amazon-seo.html">Amazon SEO</a>
+                        <Link to="/amazon-seo">Amazon SEO</Link>
                       </li>
                       <li>
-                        <a href="amazon-ppc.html">Amazon Advertising/PPC</a>
+                        <Link to="/amazon-ppc">Amazon Advertising/PPC</Link>
                       </li>
                       <li>
-                        <a href="amazon-storefront-branding.html">
+                        <Link to="/amazon-storefront-branding">
                           Amazon Storefront &amp; Branding
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="amazon-seller-consulting.html">
+                        <Link to="/amazon-seller-consulting">
                           Amazon Seller Consulting
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="amazon-post-management.html">
+                        <Link to="/amazon-post-management">
                           Amazon Posts Management
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="amazon-dsp-adversitment.html">
+                        <Link to="/amazon-dsp-adversitment">
                           Amazon DSP Advertising Management
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="walmart-marketplace.html">
+                        <Link to="/walmart-marketplace">
                           Walmart Marketplace
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="target-marketplace.html">
+                        <Link to="/target-marketplace">
                           Target Plus Marketplace
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="header-inner-dropdown-mobile-view">
-                    <a id="header-sud-header" href="LinkBuilding.html">
+                    <Link id="header-sud-header" to="/LinkBuilding">
                       <i
                         className="fa-solid fa-link"
                         style={{ color: "#000000" }}
                       />{" "}
                       Link Building
-                    </a>
+                    </Link>
                     <ul className="header-sub-menu">
                       <li>
-                        <a href="DigitalPROutreach.html">Digital PR Outreach</a>
+                        <Link to="/DigitalPROutreach">Digital PR Outreach</Link>
                       </li>
                       <li>
-                        <a href="HAROLinkBuilding.html">HARO Link Building</a>
+                        <Link to="/HAROLinkBuilding">HARO Link Building</Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="Products.html" id="products-link">
+                <Link to="/" id="products-link">
                   Our Products{" "}
                   <i
                     className="fa-solid fa-angle-down"
                     style={{ color: "#000000" }}
                   />
-                </a>
+                </Link>
                 <ul className="header-dropdown-menu" id="products-dropdown">
                   <li>
-                    <a href="Products.html">CRM/ERP</a>
+                    <Link to="/Products">CRM/ERP</Link>
                   </li>
                   <li>
-                    <a href="Products.html">Who's Best</a>
+                    <Link to="/Products">Who's Best</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="Training.html" id="trainings-link">
+                <Link to="/" id="trainings-link">
                   Trainings{" "}
                   <i
                     className="fa-solid fa-angle-down"
                     style={{ color: "#000000" }}
                   />
-                </a>
+                </Link>
                 <ul className="header-dropdown-menu" id="trainings-dropdown">
                   <li>
-                    <a href="iot.html">IOT Training</a>
+                    <Link to="/iot">IOT Training</Link>
                   </li>
                   <li>
-                    <a href="Robotics.html">Robotics Training</a>
+                    <Link to="/Robotics">Robotics Training</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#" id="header-insights-link">
+                <Link to="/" id="insights-link">
                   Insights{" "}
                   <i
                     className="fa-solid fa-angle-down"
                     style={{ color: "#000000" }}
                   />
-                </a>
+                </Link>
                 <ul className="header-dropdown-menu" id="header-insights-dropdown">
                   <li>
-                    <a href="/Blogs">Blogs</a>
+                    <Link to="/Blogs">Blogs</Link>
                   </li>
                   <li>
-                    <a href="/Events">Events</a>
+                    <Link to="/Events">Events</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="Podcast.html">Podcasts</a>
+                <Link to="/Podcast">Podcasts</Link>
               </li>
               <li>
-                <a href="contact.html" id="main-call-to-action">
+                <Link to="/contact" id="main-call-to-action">
                   Let's Connect
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="header-hamburger-menu">

@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- */
+
+:root {
+  --first: #e7e7e7;
+  --second: #030303;
+  --third: #62364f;
+  --fourth: #655182;
+  --fifth: #636363;
+  --sixth: #afafaf;
+  --seventh: #b2b2b2;
+}
+
+/* ----------------------------------------------- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* main */
+.Iot-main {
+    width: 100%;
+    height: 330.26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./176762.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Iot-main-blue-cover {
+    width: 100%;
+    height: 330.26px;
+    background-color: var(--third);
+    opacity: 0.8;
+    position: absolute;
+  }
+  
+  .Iot-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .Iot-content h2 {
+    font-family: poppins;
+    font-size: 38px;
+    color: white;
+  }
+  
+  .Iot-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .Iot-content ul li {
+    list-style-type: none;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  @media (max-width: 800px) {
+    .Iot-main {
+      height: 188.06px;
+    }
+  
+    .Iot-main-blue-cover {
+      height: 188.06px;
+    }
+  
+    .Iot-content h2 {
+      font-size: 32px;
+    }
+  
+    .Iot-content ul li {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .Iot-main {
+      height: 188.06px;
+    }
+  
+    .Iot-main-blue-cover {
+      height: 188.06px;
+    }
+  
+    .Iot-content h2 {
+      font-size: 26px;
+    }
+  
+    .Iot-content ul li {
+      font-size: 10px;
+    }
+  }
+  
+  .Iot-hero-section {
+      width: 100%;
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      padding: 0 130px;
+    }
+    
+    .Iot-hero-img img {
+      height: 400px;
+      width: 400px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    .Iot-hero-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .Iot-hero-content .hero-techie {
+      font-family: poppins;
+      color: var(--third);
+    }
+    
+    .Iot-hero-content h3 {
+      font-family: poppins;
+      font-weight: 500;
+      color: var(--second);
+    }
+    
+    .Iot-hero-conent-para p {
+      font-family: poppins;
+      font-size: 17px;
+      padding-bottom: 1rem !important;
+    }
+    
+    .Iot-hero-button {
+      margin-top: 10px;
+    }
+    
+    .Iot-hero-button a {
+      text-decoration: none;
+      color: var(--second);
+      background-color: #f9f9f9;
+      padding: 13px 25px;
+      border-radius: 4px;
+      font-family: poppins;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s ease-in-out;
+    }
+    
+    .Iot-hero-button a:hover {
+      background-color: var(--second);
+      color: #fff;
+    }
+    
+    @media (max-width: 1000px) {
+      .Iot-hero-section {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .Iot-hero-content {
+        margin-top: -40px;
+        padding: 0 70px;
+      }
+    
+      .Iot-hero-img img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .Iot-hero-content {
+        padding: 0 40px;
+      }
+    }
+    
+    .Iot-cta-section {
+        background-image: url("./pexels-diva-plavalaguna-6937859.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        position: relative;
+      }
+      
+      .Iot-cta-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--fourth);
+        opacity: 0.7;
+        z-index: 1;
+      }
+      
+      .Iot-cta-container {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .Iot-cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+        z-index: 2;
+      }
+      
+      .Iot-cta-title {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+        z-index: 2;
+      }
+      
+      .Iot-cta-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        z-index: 2;
+      }
+      
+      .Iot-cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 2;
+      }
+      
+      .Iot-cta-btn {
+        padding: 12px 30px;
+        background-color: var(--third);
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        z-index: 2;
+      }
+      
+      .Iot-cta-btn:hover {
+        background-color: var(--second);
+      }
+      
+      .Iot-secondary {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+      }
+      
+      .Iot-secondary:hover {
+        border: 2px solid var(--second);
+        background-color: var(--second);
+        color: var(--first);
+      }
+      
+      .Iot-cta-arrow {
+        margin-left: 5px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .Iot-cta-title {
+          font-size: 2rem;
+        }
+      
+        .Iot-cta-subtitle {
+          font-size: 1rem;
+        }
+      
+        .Iot-cta-buttons {
+          flex-direction: column;
+        }
+      
+        .Iot-cta-btn {
+          padding: 10px 25px;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .Iot-cta-title {
+          font-size: 1.6rem;
+        }
+      
+        .Iot-cta-subtitle {
+          font-size: 0.9rem;
+        }
+      
+        .Iot-cta-btn {
+          padding: 8px 20px;
+        }
+      }
+  
+  
+  
+  
+      .Iot-robotics-cards-section {
+          margin-top: 40px;
+          padding: 40px 20px;
+          text-align: center;
+          background-color: #f9f9f9;
+      }
+      
+      .Iot-section-heading {
+          font-size: 2.5em;
+          margin-bottom: 30px;
+          color: #333;
+      }
+      
+      .Iot-cards-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+      }
+      
+      .Iot-training-card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          transition: transform 0.3s ease-in-out;
+      }
+      
+      .Iot-training-card:hover {
+          transform: translateY(-10px);
+      }
+      
+      .Iot-card-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+      
+      .Iot-card-content {
+          padding: 20px;
+      }
+      
+      .Iot-card-content h3 {
+          font-size: 1.5em;
+          margin-bottom: 15px;
+          color: #333;
+      }
+      
+      .Iot-card-content p {
+          font-size: 1.1em;
+          color: #555;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 1024px) {
+          .Iot-cards-container {
+              grid-template-columns: repeat(2, 1fr);
+          }
+      }
+      
+      @media (max-width: 768px) {
+          .Iot-cards-container {
+              grid-template-columns: 1fr;
+          }
+      
+          .Iot-section-heading {
+              font-size: 2em;
+          }
+      }
+      
+      @media (max-width: 480px) {
+          .Iot-training-card {
+              padding: 15px;
+          }
+      
+          .Iot-card-content h3 {
+              font-size: 1.3em;
+          }
+      
+          .Iot-card-content p {
+              font-size: 1em;
+          }
+      }
+  
+  
+  
+  
+      .Iot-learning-journey {
+          padding: 40px;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          border-radius: 8px;
+          margin: 20px;
+          /* margin-bottom: 20px; */
+      }
+      
+      .Iot-journey-heading {
+          font-size: 2.5em;
+          margin-bottom: 20px;
+          font-weight: 600;
+      }
+      
+      .Iot-journey-content {
+          font-size: 1.2em;
+          margin-bottom: 30px;
+          font-weight: 300;
+      }
+      
+      .Iot-journey-button {
+          background-color: var(--third);
+          color: white;
+          padding: 15px 30px;
+          text-decoration: none;
+          font-size: 1.1em;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+      
+      .Iot-journey-button:hover {
+          background-color: #714c61;
+          color: white;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      
+      }
+      
+      @media (max-width: 768px) {
+          .Iot-learning-journey {
+              padding: 30px;
+          }
+      
+          .Iot-journey-heading {
+              font-size: 2em;
+          }
+      
+          .Iot-journey-content {
+              font-size: 1.1em;
+          }
+      
+          .Iot-journey-button {
+              font-size: 1em;
+              padding: 12px 25px;
+          }
+      }
+      
+      @media (max-width: 480px) {
+          .Iot-learning-journey {
+              padding: 20px;
+          }
+      
+          .Iot-journey-heading {
+              font-size: 1.8em;
+          }
+      
+          .Iot-journey-content {
+              font-size: 1em;
+          }
+      
+          .Iot-journey-button {
+              font-size: 0.9em;
+              padding: 10px 20px;
+          }
+      }
