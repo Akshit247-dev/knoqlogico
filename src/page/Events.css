@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: poppins;
+  overflow-x: hidden;
+}
+
+::placeholder {
+  font-family: poppins;
+}
+
+/* ---------------------------------------------------- */
+
+:root {
+  --first: #e7e7e7;
+  --second: #030303;
+  --third: #62364f;
+  --fourth: #655182;
+  --fifth: #636363;
+  --sixth: #afafaf;
+  --seventh: #b2b2b2;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.section-title img {
+  display: block;
+  margin: auto;
+  width: 60px;
+  margin: 10px 0;
+}
+
+.section-title p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+  .section-title p {
+    font-size: 0.8rem;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+.all-events-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.event1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.event1-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.event2-img {
+  width: 60%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.event1-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event2-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.event1-content {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.event1-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.event1-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .event1 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .event1-img {
+    padding-bottom: 56.25%;
+  }
+
+  .event1-title {
+    font-size: 24px;
+  }
+
+  .event1-content p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .event1 {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .event1-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .event1-content {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .event1-title {
+    font-size: 32px;
+  }
+
+  .event1-content p {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+/* General Styling */
+.event-img-container-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex: 1 0 calc(100% / 3);
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.01);
+  filter: brightness(1.03);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 30%;
+  transition: 0.2s ease-in-out;
+}
+
+.carousel-btn:hover {
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel img {
+    flex: 1 0 calc(100% / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel img {
+    flex: 1 0 100%;
+  }
+}
+
+/* --------------------------------------------------------------- */

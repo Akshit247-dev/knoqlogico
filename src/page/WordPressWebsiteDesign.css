@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------- */
+
+:root {
+  --first: #e7e7e7;
+  --second: #030303;
+  --third: #62364f;
+  --fourth: #655182;
+  --fifth: #636363;
+  --sixth: #afafaf;
+  --seventh: #b2b2b2;
+}
+
+/* ----------------------------------------------- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.WordPressWebsiteDesign-main {
+    width: 100%;
+    height: 330.26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./121068.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .WordPressWebsiteDesign-main-blue-cover {
+    width: 100%;
+    height: 330.26px;
+    background-color: var(--third);
+    opacity: 0.8;
+    position: absolute;
+  }
+  
+  .WordPressWebsiteDesign-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  
+  .WordPressWebsiteDesign-content h2 {
+    font-family: poppins;
+    font-size: 38px;
+    color: white;
+  }
+  
+  .WordPressWebsiteDesign-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .WordPressWebsiteDesign-content ul li {
+    list-style-type: none;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  @media (max-width: 800px) {
+    .WordPressWebsiteDesign-main {
+      height: 188.06px;
+    }
+  
+    .WordPressWebsiteDesign-main-blue-cover {
+      height: 188.06px;
+    }
+  
+    .WordPressWebsiteDesign-content h2 {
+      font-size: 32px;
+    }
+  
+    .WordPressWebsiteDesign-content ul li {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .WordPressWebsiteDesign-main {
+      height: 188.06px;
+    }
+  
+    .WordPressWebsiteDesign-main-blue-cover {
+      height: 188.06px;
+    }
+  
+    .WordPressWebsiteDesign-content h2 {
+      font-size: 26px;
+    }
+  
+    .WordPressWebsiteDesign-content ul li {
+      font-size: 10px;
+    }
+  }
+  
+  /* ------------tagline-section------------ */
+  
+  .WordPressWebsiteDesign-tagline-section {
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .WordPressWebsiteDesign-tagline-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+    position: relative;
+    color: #2c2d3f;
+    font-family: poppins;
+  }
+  
+  .WordPressWebsiteDesign-beat-img {
+    background: url("././section-img.png");
+    width: 48px;
+    height: 24px;
+  }
+  
+  .WordPressWebsiteDesign-tagline-section p {
+    text-align: center;
+    font-size: 15px;
+    color: #888;
+    margin-top: 15px;
+    font-family: poppins;
+  }
+  
+  @media (max-width: 950px) {
+    .WordPressWebsiteDesign-tagline-section {
+      padding: 0 150px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section h2 {
+      font-size: 26px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .WordPressWebsiteDesign-tagline-section {
+      margin-top: 80px;
+      padding: 0 100px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .WordPressWebsiteDesign-tagline-section {
+      margin-top: 60px;
+      padding: 0 70px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section h2 {
+      font-size: 18px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section p {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .WordPressWebsiteDesign-content ul li {
+      font-size: 9px;
+    }
+  
+    .WordPressWebsiteDesign-content h2 {
+      font-size: 20px;
+    }
+  
+    .WordPressWebsiteDesign-tagline-section h2 {
+      font-size: 13px;
+    }
+  }
+  
+  /* ----------------HERO SECTION----------- */
+  
+  .WordPressWebsiteDesign-hero-section {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 130px;
+  }
+  
+  .WordPressWebsiteDesign-hero-img img {
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .WordPressWebsiteDesign-hero-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .WordPressWebsiteDesign-hero-content .hero-techie {
+    font-family: poppins;
+    /* padding-bottom: 1rem !important; */
+    color: var(--third);
+  }
+  
+  .WordPressWebsiteDesign-hero-content h3 {
+    font-family: poppins;
+    font-weight: 500;
+    color: var(--second);
+  }
+  
+  .WordPressWebsiteDesign-hero-conent-para p {
+    font-family: poppins;
+    font-size: 17px;
+    padding-bottom: 1rem !important;
+  }
+  
+  .WordPressWebsiteDesign-hero-button {
+    margin-top: 10px;
+  }
+  
+  .WordPressWebsiteDesign-hero-button a {
+    text-decoration: none;
+    color: var(--second);
+    background-color: #f9f9f9;
+    padding: 13px 25px;
+    border-radius: 4px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .WordPressWebsiteDesign-hero-button a:hover {
+    background-color: var(--second);
+    color: #fff;
+  }
+  
+  @media (max-width: 1000px) {
+    .WordPressWebsiteDesign-hero-section {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .WordPressWebsiteDesign-hero-content {
+      margin-top: -40px;
+      padding: 0 70px;
+    }
+  
+    .WordPressWebsiteDesign-hero-img img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .WordPressWebsiteDesign-hero-content {
+      padding: 0 40px;
+    }
+  }
+  
+  /* PROCESS-CARDS--------------------- */
+  
+  .WordPressWebsiteDesign-ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  .WordPressWebsiteDesign-ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  .WordPressWebsiteDesign-ag-courses_item {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+  .WordPressWebsiteDesign-ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  .WordPressWebsiteDesign-ag-courses-item_link:hover,
+  .WordPressWebsiteDesign-ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #fff;
+  }
+  .WordPressWebsiteDesign-ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+  }
+  .WordPressWebsiteDesign-ag-courses-item_title {
+    min-height: 87px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .WordPressWebsiteDesign-ag-courses-item_date-box {
+    font-size: 18px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  .WordPressWebsiteDesign-ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: var(--fourth);
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .WordPressWebsiteDesign-ag-courses_item:nth-child(1) .ag-courses-item_bg {
+    background-color: var(--fourth);
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .WordPressWebsiteDesign-ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .WordPressWebsiteDesign-ag-courses-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .WordPressWebsiteDesign-ag-format-container {
+      width: 96%;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    .WordPressWebsiteDesign-ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .WordPressWebsiteDesign-ag-courses-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 24px;
+    }
+    .WordPressWebsiteDesign-ag-courses-item_link {
+      padding: 22px 40px;
+    }
+    .WordPressWebsiteDesign-ag-courses-item_date-box {
+      font-size: 16px;
+    }
+  }
+  
+  /* PROCESS-CARDS--------------------- */

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body , html{
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------- */
+
+:root {
+  --first: #e7e7e7;
+  --second: #030303;
+  --third: #62364f;
+  --fourth: #655182;
+  --fifth: #636363;
+  --sixth: #afafaf;
+  --seventh: #b2b2b2;
+}
+
+
+/* ------------------------------------- */
+
+/* General Styles */
+
+  
+  body {
+    font-family: poppins;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Breadcrumbs */
+  .breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--third);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .breadcrumbs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 26px;
+    color: #fff;
+  }
+  
+  .breadcrumbs .bread-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .breadcrumbs .bread-list li {
+    color: #fff;
+  }
+  
+  /* Privacy Policy Container */
+  .privacy-policy {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title h1 {
+    font-size: 36px;
+    color: var(--second);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Policy Section */
+  .policy-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .policy-section .section-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .policy-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .policy-section .link {
+    color: #1A76D1;
+    font-weight: bold;
+  }
+  
+  .policy-section .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .privacy-policy {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .section-title h1 {
+      font-size: 28px;
+    }
+  
+    .policy-section {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  
+    .policy-section .section-heading {
+      font-size: 20px;
+    }
+  
+    .policy-section p {
+      font-size: 14px;
+    }
+  
+    .breadcrumbs h2 {
+      font-size: 22px;
+    }
+  }
